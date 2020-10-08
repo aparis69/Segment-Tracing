@@ -11,36 +11,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Code\Source\blobtree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Source\evector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Source\fundamentals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\Code\Source\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Code\Source\heightfield.cpp">
+    <ClCompile Include="..\Code\Source\mathematics.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Code\Source\blocks.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Code\Include\MC.h">
-      <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Code\Include\vec.h">
+    <ClInclude Include="..\Code\Include\blobtree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\Code\Include\basics.h">
+    <ClInclude Include="..\Code\Include\evector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\Code\Include\noise.h">
+    <ClInclude Include="..\Code\Include\fundamentals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\Code\Include\heightfield.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Code\Include\blocks.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Code\Include\convhull_3d.h">
+    <ClInclude Include="..\Code\Include\mathematics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
