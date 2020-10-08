@@ -173,15 +173,15 @@ public:
 	static double Max(const double&, const double&, const double&, const double&);
 
 	// Angles
-	static constexpr double DegreeToRadian(const double&);
-	static constexpr double RadianToDegree(const double&);
+	static double DegreeToRadian(const double&);
+	static double RadianToDegree(const double&);
 };
 
 /*!
 \brief Convert degrees to randians.
 \param a Angle in degrees.
 */
-inline constexpr double Math::DegreeToRadian(const double& a)
+inline double Math::DegreeToRadian(const double& a)
 {
 	return a * Math::Pi / 180.0;
 }
@@ -190,7 +190,7 @@ inline constexpr double Math::DegreeToRadian(const double& a)
 \brief Convert radian to degrees.
 \param a Angle in radian.
 */
-inline constexpr double Math::RadianToDegree(const double& a)
+inline double Math::RadianToDegree(const double& a)
 {
 	return a * 180.0 / Math::Pi;
 }
