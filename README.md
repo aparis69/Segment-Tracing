@@ -9,14 +9,15 @@ and presented at Eurographics 2020. This is aimed at researchers, students or pr
 [Click here for more information about the project](https://aparis69.github.io/public_html/projects/galin2020_Segment.html).
 
 ### Important notes
-* This code is **not** the one which produced the scenes seen in the paper. Everything has been *recoded* on my side to make sure it is free to use. The original code from the paper is dependent on internal libraries of my team. Hence, the results as well as the timings may differ from the ones in the paper.
+* This code is **not** the one which produced the scenes seen in the paper. Hence, results as well as timings may differ from the ones in the paper.
 * This is **research** code provided without any warranty. However, if you have any problem you can still send me an email or create an issue.
 
 ### Testing
-There is no dependency. Running the program will output 3 .obj files which can then be visualized in another application (Blender, MeshLab). Tests have been made on:
+There is no dependency. Running the program will render two ppm file (render + cost) for the Segment tracing algorithm. Tests have been made on:
 * Visual Studio 2019: double click on the solution in ./VS2019/ and Ctrl + F5 to run
+* Ubuntu 16.04 (SOON)
 
-Results are also available in the Renders/ folder of the repository.
+Results for comparing with other algorithms are also available in the Renders/ folder of the repository. You can also modify one line in the main.cpp file to test other methods, namely Sphere tracing and Enhanced sphere tracing.
 
 ### Citation
 You can use this code in any way you want, however please credit the original article:
