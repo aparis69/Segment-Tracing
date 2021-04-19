@@ -27,6 +27,9 @@ You can use this code in any way you want, however please credit the original ar
   Author = {Galin, Eric and Gu{\'e}rin, Eric and Paris, Axel and Peytavie, Adrien},
   Journal = {{Computer Graphics Forum}},
   Publisher = {{Wiley}},
-  Year = {2020}
+  Year = {2020},
+  Volume = {39},
+  Number = {2},
+  Pages = {545-554}
 }
 ```	
