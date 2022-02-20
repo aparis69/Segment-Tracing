@@ -17,6 +17,7 @@ and presented at Eurographics 2020. This is aimed at researchers, students or pr
 
 ### Testing
 There is no dependency. Running the program will render two ppm file (render + cost) for the Segment tracing algorithm. Tests have been made on:
+* Visual Studio 2017: double click on the solution in ./VS2017/ and Ctrl + F5 to run
 * Visual Studio 2019: double click on the solution in ./VS2019/ and Ctrl + F5 to run
 * Ubuntu 16.04: cd G++/ && make && ./Out/SegmentTracing
 
