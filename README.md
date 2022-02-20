@@ -6,7 +6,10 @@
 
 Source code for some of the results shown in the paper "Segment Tracing Using Local Lipschitz Bounds" published in CGF in 2020 
 and presented at Eurographics 2020. This is aimed at researchers, students or profesionnals who may want to reproduce **some** of the results described in the paper.
-[Click here for more information about the project](https://aparis69.github.io/public_html/projects/galin2020_Segment.html).
+
+[Project Page](https://aparis69.github.io/public_html/projects/galin2020_Segment.html)
+
+[Paper](https://hal.archives-ouvertes.fr/hal-02507361/document)
 
 ### Important notes
 * This code is **not** the one which produced the scenes seen in the paper. Hence, results as well as timings may differ from the ones in the paper.
