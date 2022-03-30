@@ -2,7 +2,7 @@
 # Type "make help" for usage help
 
 ifndef config
-  config=debug64
+  config=release64
 endif
 export config
 
@@ -23,7 +23,6 @@ help:
 	@echo "Usage: make [config=name] [target]"
 	@echo ""
 	@echo "CONFIGURATIONS:"
-	@echo "   debug64"
 	@echo "   release64"
 	@echo ""
 	@echo "TARGETS:"
