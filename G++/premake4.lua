@@ -1,18 +1,13 @@
 solution "SegmentTracing"
-	configurations { "Debug", "Release" }
+	configurations { "release" }
 
 	platforms { "x64" }
 	
 	includedirs { ".", "../Code/Include", "/usr/include/" }
 
 	rootDir = path.getabsolute("../")
-	
-	configuration "Debug"
-		targetdir "./Out/Debug"
-		defines { "DEBUG" }
-		flags { "Symbols" }
 
-	configuration "Release"
+	configuration "release"
 		targetdir "./Out/Release"
 		flags { "OptimizeSpeed" }
 

@@ -249,8 +249,10 @@ void PixelColor(int i, int j, double k, RayTraceMethod method, Vector& color, Ve
 	}
 
 	// Compute cost
+	// Unfair comparison (for us), but we can't see anything on the cost image using state of the art methods
+	double div = (method == RayTraceMethod::SegmentTracing) ? 512 : 16384;
 	double c = 0.0;
-	c = Math::Min(double(s) / 512, 1.0);
+	c = Math::Min(double(s) / div, 1.0);
 	cost = Vector(0, c * 255.0, 0);
 }
 
@@ -286,9 +288,6 @@ bool WriteToFile(const char* path, Vector** pixels)
 	return true;
 }
 
-/*!
-\brief
-*/
 int main()
 {
 	// Init pixels
@@ -303,8 +302,8 @@ int main()
 	// Global Lipschitz constant foe sphere tracing and enhanced sphere tracing
 	const double k = tree->K();
 
-	//int l = 0;  // Put  this line if Raytrace all methods: sphere tracing, enhanced sphere tracing and segment tracing
-	int l = RayTraceMethod::SegmentTracing;	// By default, program will only use segment tracing.
+	int l = 0;  // Put this line if Raytrace all methods: sphere tracing, enhanced sphere tracing and segment tracing
+	//int l = RayTraceMethod::SegmentTracing;	// With this line, the program will only use segment tracing.
 	for (/* empty */; l < RayTraceMethod::COUNT; l++)
 	{
 		RayTraceMethod method = (RayTraceMethod)l;
@@ -334,8 +333,8 @@ int main()
 		// Output to ppm files
 		char path[40];
 		char pathCost[40];
-		sprintf(path, "../Renders/render%d.ppm", l);
-		sprintf(pathCost, "../Renders/render%d_cost.ppm", l);
+		sprintf(path, "./render%d.ppm", l);
+		sprintf(pathCost, "./render%d_cost.ppm", l);
 		if (!WriteToFile(path, pixels))
 			std::cout << "WriteToFile Error - failed to write file 1 to disk" << std::endl;
 		if (!WriteToFile(pathCost, pixelsCost))
