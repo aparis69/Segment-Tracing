@@ -11,6 +11,8 @@ and presented at Eurographics 2020. This is aimed at researchers, students or pr
 
 [Paper](https://hal.archives-ouvertes.fr/hal-02507361/document)
 
+This implementation has been labelled by the GRSI (Graphics Replicability Stamp Initiative), see [here](http://www.replicabilitystamp.org/) for more details.
+
 ### Important notes
 * This code is **not** the one which produced the scenes seen in the paper. Hence, results as well as timings may differ from the ones in the paper.
 * This is **research** code provided without any warranty. However, if you have any problem you can still send me an email or create an issue.
